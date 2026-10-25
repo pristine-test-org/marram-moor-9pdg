@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Field notes · Marram Moor</title>
+    <style>
+      :root { font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      body { margin: 0; }
+      header, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      header a { color: #2f7d4f; }
+      .mark { font-weight: 700; color: #2f7d4f; text-decoration: none; }
+      main { max-width: 44rem; margin: 0 auto; padding: 2rem 0; }
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      h1 {
+        font-size: clamp(2rem, 6vw, 3rem); margin: 0 1rem 1rem;
+        background: linear-gradient(90deg, #2f7d4f, #7b3fe4);
+        -webkit-background-clip: text; background-clip: text;
+        color: transparent; -webkit-text-fill-color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no background. */
+      .lede { margin: 0 0 1.5rem; padding: 0; max-width: none; line-height: 1.6; }
+      .notes { list-style: none; margin: 0 1rem; padding: 0; display: grid; gap: 0.75rem; }
+      .notes li { background: #fff; border: 1px solid #e5e5e0; border-radius: 0.5rem; padding: 0.9rem 1rem; }
+      .notes strong { display: block; margin-bottom: 0.25rem; }
+      /* Intentional, for Impeccable's test drive: light grey text, well under 4.5:1. */
+      .notes span { color: #c4c4c4; font-size: 0.95rem; }
+      .bar { margin: 1.5rem 1rem 0; height: 0.5rem; background: #e5e5e0; border-radius: 0.25rem; }
+      /* Intentional, for Impeccable's test drive: transition on a layout property. */
+      .bar i { display: block; height: 100%; width: 40%; background: #2f7d4f; border-radius: 0.25rem; transition: width 0.3s; }
+      .bar:hover i { width: 90%; }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      .back { display: inline-block; margin: 1.5rem 1rem 0; font-size: 10px; color: #2f7d4f; }
+      footer { color: #777; font-size: 0.9rem; border-top: 1px solid #e5e5e0; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="mark" href="/">Marram Moor</a>
+      <a href="/#live">Live list</a>
+    </header>
+    <main>
+      <h1>Field notes from the moor</h1>
+      <p class="lede">Every week we write down what changed on the list, what we kept, and what we dropped. These are the latest three entries from the people who keep it.</p>
+      <ul class="notes">
+        <li><strong>Week 41: fewer, clearer items</strong><span>We merged six overlapping entries into two and cleared everything finished.</span></li>
+        <li><strong>Week 40: shared by default</strong><span>The list now loads for everyone on the team without a sign-in step.</span></li>
+        <li><strong>Week 39: quieter empty state</strong><span>An empty list now says so plainly instead of showing a spinner.</span></li>
+      </ul>
+      <div class="bar" aria-hidden="true"><i></i></div>
+      <a class="back" href="/">Back to the landing page</a>
+    </main>
+    <footer>Marram Moor</footer>
+  </body>
+</html>
